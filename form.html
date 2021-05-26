@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form class="form">
+        <div class="sub-form" id="sub-form1">
+            <div class="input-group" id="input-group-nm">
+                <span>Nama Pemesan</span><br>
+                <input type="text" id="nama-psn" name="nama-psn" onkeypress="hpsErr('nama-dpn','namaDErr')">
+                <p id="namaDErr"></p>
+            </div>
+            <div class="input-group">
+                <span>Tanggal Pemesanan</span><br>
+                <input type="date" id="tgl" name="tgl-psn" onchange="hpsErr('tgl','tglErr')">
+                <p id="tglErr"></p>
+            </div>
+            <div class="input-group">
+                <span>Nomor Meja</span><br>
+                <input type="text" id="nomor-meja" name="nomor-meja" onkeypress="hpsErr('meja','mejaErr')">
+                <p id="mejaErr"></p>
+            </div>
+            <div class="input-group">
+                <span>Pesanan</span><br>
+                <input type="text" id="pesan" name="pesan" onkeypress="hpsErr('pesan','emailErr')">
+                <p id="pesanErr"></p>
+            </div>
+            <div class="input-group">
+                <span>Sub Total</span><br>
+                <input type="text" id="total" name="total" onkeypress="hpsErr('total,'emailErr')">
+                <p id="totalErr"></p>
+            </div>
+            <div class="input-group">
+                <label for="discount">Type Discount</label>
+                <div class="discount">
+                    <select>
+                        <option value="Tidak ada discount">Tidak Ada Discount</option>
+                        <option value="HUT NKRI">HUT NKRI</option>
+                        <option value="HUT Restaurant">HUT Restaurant</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <span>Discount</span><br>
+                <input type="text" id="discount" name="discount" onkeypress="hpsErr('discount,'emailErr')">
+                <p id="discountErr"></p>
+            </div>
+            <div class="input-group">
+                <span>Grand Total</span><br>
+                <input type="text" id="grand-total" name="grand-total" onkeypress="hpsErr('gtotal,'emailErr')">
+                <p id="gtotalErr"></p>
+            </div>
+            <div class="input-group">
+                <div class="radio">
+					<span>Metode Pembayaran :</span><br>
+                    <label for="bayar"><input type="radio" name="metode" id="bayar">&emsp;<img src="img/Cash.png">&emsp;Cash</label>
+					<label for="bayar2"><input type="radio" name="metode" id="bayar">&emsp;<img src="img/gopay.png">&emsp;Gopay</label>
+					<label for="bayar3"><input type="radio" name="metode" id="bayar2">&emsp;<img src="img/ovo.png">&emsp;Ovo</label>
+					<label for="bayar4"><input type="radio" name="metode" id="bayar3">&emsp;<img src="img/BCA.png">&emsp;Bank BCA</label>
+					<label for="bayar5"><input type="radio" name="metode" id="bayar4">&emsp;<img src="img/BRI.png">&emsp;Bank BRI</label>
+					<label for="bayar6"><input type="radio" name="metode" id="bayar5">&emsp;<img src="img/BNI.png">&emsp;Bank BNI</label>
+					<label for="bayar7"><input type="radio" name="metode" id="bayar6">&emsp;<img src="img/Mandiri.png">&emsp;Bank Mandiri</label>
+				</div>
+            </div>
+        </div>  
+        <input type="submit" value="Cetak" id="btn-daftar"> 
+    </form>
+    <div class="contact">
+        <div class="ct-content">
+            <h3>Hubungi Kami</h3>
+            <h5>humas@trunojoyo.ac.id</h5>
+            <h5>031 - 3011146</h5>
+            <h5>Jl Telang, Kec Kamal, Bangkalan, Madura</h5>
+        </div>
+        <div class="ct-content">
+            <h3>Peta Lokasi</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15835.939177065147!2d112.7230807!3d-7.1277548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9777ca139b28195d!2sUniversitas%20Trunojoyo%20Madura!5e0!3m2!1sid!2sid!4v1620786140023!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="ct-content">
+            <h3>Info Lainnya</h3>
+            <h5>- trunojoyo.ac.id</h5>
+            <h5>- instagram.com/bemkmutm</h5>
+        </div>
+    </div>
+    <footer>
+        <h4 id="cp-right">Copyright © 2021 | Design & Develop by FAD</h4>
+    </footer>
+</body>
+</html>
