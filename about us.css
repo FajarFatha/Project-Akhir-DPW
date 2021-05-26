@@ -32,7 +32,6 @@ ul li a:hover {
     color: #020242;
 }
 h3,
-
 h5 {
     color: rgb(0, 0, 0);
     font-family: Arial;
@@ -41,20 +40,6 @@ h5 {
     padding-bottom: 10px;
     padding-left: 50px;
 }
-h1 {
-    color: #00a2ff;
-    font-size: 88px;
-    text-align: center;
-    font-family: "Calypsoka One";
-    text-shadow: 3px 4px rgba(0, 0, 0, 0.753);
-    margin-bottom: 0px;
-    
-} 
-@font-face {
-    font-family: 'Calypsoka One';
-    src: url("CalypsokaOne.ttf");
-}
-
 
 .contact {
     display: grid;
@@ -81,14 +66,21 @@ iframe {
 .about-content span {
     display: inline-block;
     width: 90%;
-    color: white;
     position: relative;
     left: 3.5%;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     font-weight: bold;
-    font-size: 35px;
+    color: #00a2ff;
+    font-size: 88px;
+    font-family: "Calypsoka One";
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.753);
+    margin-bottom: 0px;
+}
+@font-face {
+    font-family: 'Calypsoka One';
+    src: url("CalypsokaOne.ttf");
 }
 .container-about {
     width: 1300px;
@@ -96,7 +88,7 @@ iframe {
     padding: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
@@ -114,6 +106,7 @@ img{
     border-style: solid;
     border-width: 4px;
     border-color: rgb(0, 0, 0);
+    margin-left: 20px;
 }
 button{
     background: rgb(238, 234, 234);
