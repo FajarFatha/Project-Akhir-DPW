@@ -208,11 +208,12 @@ span#nama-web {
     padding-bottom: 50px;
 }
 
-.card {
+.card-content .card {
     margin-top: 20px;
     padding-bottom: 50px;
     padding: 45px;
     border-color: #d0ccbf;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 40%;
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -267,6 +268,10 @@ span#nama-web {
 .card-content2 .card {
     margin-left: 55px;
     max-width: 85px;
+    width: 40%;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    padding: 45px;
 }
 
 .card-content2 h4 {
