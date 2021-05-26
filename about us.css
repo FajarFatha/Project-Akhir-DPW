@@ -45,6 +45,7 @@ h5 {
     display: grid;
     grid-template-columns: repeat(3, auto);
     padding-bottom: 50px;
+    float: inline-end;
 }
 
 iframe {
@@ -83,22 +84,18 @@ iframe {
     src: url("CalypsokaOne.ttf");
 }
 .container-about {
-    width: 1300px;
-    margin: 100px auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
+    text-align: center;
 }
 
 .content-about {
-    position: relative;
-    left: 1%;
-    width: 200px;
-    margin: 0 0 3% 3%;
-    float: right;
+    width: 350px;
+    height: 80%;
+    margin-left: 20px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 img{
     width: 300px;
     height: 400px;
@@ -106,24 +103,16 @@ img{
     border-style: solid;
     border-width: 4px;
     border-color: rgb(0, 0, 0);
-    margin-left: 20px;
+    margin-top: 20px;
 }
-button{
-    background: rgb(238, 234, 234);
-    cursor: zoom-in;
-    font-size: 3rem;
-    font-weight: bold;
-    height: 3rem;
-    opacity: 3;
-    position: relative;
-    width: 3rem;
+.desc{
+    text-align: center;
+    padding: 10px 20px;
 }
+
 h2{
     font-family: 'Courier New';
     font-size: 28px;
     font-weight: bold;
     font-style: italic;
 }
-
-
-
