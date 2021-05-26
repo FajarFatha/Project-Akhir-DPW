@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial;
 }
 
 
@@ -43,6 +42,7 @@ a#nama-web {
 
 span#nama-web {
     color: #f2bf63;
+    font-family: 'East Octopus';
     margin-left: 7px;
 }
 
@@ -63,6 +63,7 @@ span#nama-web {
     width: 100%;
     position: fixed;
     top: 80px;
+    font-family: Arial;
     font-weight: 700;
     color: #353535;
 }
@@ -72,6 +73,7 @@ span#nama-web {
 
 .navbar-left {
     float: left;
+    padding-top: 16px;
 }
 
 .navbar-right {
@@ -81,8 +83,15 @@ span#nama-web {
 
 /*------- Mengatur Tampilan Tulisan Menu -------*/
 
-.navbar p {
+.navbar-left a {
+    text-decoration: none;
+    padding-left: 14px;
+    color: #353535;
+}
+
+.navbar-left a:hover {
     padding: 14px 16px;
+    color: #fff;
 }
 
 
@@ -172,15 +181,94 @@ span#nama-web {
 }
 
 
-/**/
+/*------- Mengatur Tampilan Langkah-langkan Pemesanan -------*/
 
-.contact {
+.cr-content {
+    text-align: center;
+    font-family: 'Mont Light';
+}
+
+.cr-content h1 {
+    font-family: 'Mont Heavy';
+    color: #232c2e;
+    margin: 35px;
+}
+
+.cr-content h3 {
+    font-family: 'Mont Heavy';
+    color: #7e8276;
+    margin: 15px;
+}
+
+.card-content {
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    padding-left: 520px;
+    padding-right: auto;
+    padding-bottom: 50px;
+}
+
+.card {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    padding: 45px;
+    background-color: #fff;
+    border-color: #d0ccbf;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40%;
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
 
+.card:hover {
+    background-color: beige;
+}
+
+.box-numb {
+    background-color: rgb(212, 178, 85);
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+.box-numb p {
+    font-family: 'Mont Heavy';
+    font-size: 35px;
+    color: #7e8276;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+
+/*------- Import Font .cr-content -------*/
+
+@font-face {
+    font-family: 'Mont Heavy';
+    src: url(font/Mont-HeavyDEMO.otf);
+}
+
+@font-face {
+    font-family: 'Mont Light';
+    src: url(font/Mont-ExtraLightDEMO.otf);
+}
+
+
+/*------- Mengatur Tampilan Class Contact Berisi Informasi Kontak yang Dapat dihubungi -------*/
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-family: Arial;
+}
+
 .ct-content {
-    height: 75px;
+    height: 95px;
     background-color: #f2bf63;
     color: black;
     font-weight: 800;
@@ -206,5 +294,6 @@ footer {
     height: 20px;
     width: auto;
     padding: 35px;
+    font-family: Arial;
     text-align: center;
 }
