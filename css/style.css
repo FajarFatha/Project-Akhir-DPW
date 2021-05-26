@@ -1,0 +1,55 @@
+/*------- Tampilan dasar berlaku keseluruhan selector -------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*------- Header penampung logo-nama website -------*/
+
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #353535;
+    text-align: center;
+}
+
+
+/*------- Tampilan tag img logo website-------*/
+
+img#logo-web {
+    height: 45px;
+    width: 45px;
+    margin-top: 17px;
+}
+
+
+/*------- Tampilan tag a nama website-------*/
+
+a#nama-web {
+    text-decoration: none;
+    color: white;
+    font-family: 'East Octopus';
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+
+/*------- Tampilan tag span nama website-------*/
+
+span#nama-web {
+    color: #f2bf63;
+    margin-left: 5px;
+}
+
+
+/*------- Import font nama website -------*/
+
+@font-face {
+    font-family: 'East Octopus';
+    src: url(font/East-Octopus.otf);
+}
+
+
+/**/
