@@ -1,0 +1,129 @@
+.nav {
+    background-color: #33a7e0;
+    height: 90px;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
+.navbar-right {
+    float: right;
+}
+ul {
+    list-style: none;
+    padding-right: 2em;
+}
+
+ul li {
+    display: inline-block;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    padding-right: 1em;
+}
+
+ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul li a:hover {
+    color: #020242;
+}
+h3,
+h5 {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-bottom: 50px;
+}
+
+iframe {
+    height: 110px;
+    width: 375px;
+    padding-left: 50px;
+}
+
+#cp-right {
+    text-align: center;
+    font-family: Arial;
+    color: #ffffff;
+    background-color: #708d94;
+    padding: 30px;
+}
+.about-content {
+    margin-top: 100px;
+}
+.about-content span {
+    display: inline-block;
+    width: 90%;
+    position: relative;
+    left: 3.5%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #00a2ff;
+    font-size: 88px;
+    font-family: "Calypsoka One";
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.753);
+    margin-bottom: 0px;
+}
+@font-face {
+    font-family: 'Calypsoka One';
+    src: url("CalypsokaOne.ttf");
+}
+.container-about {
+    width: 1300px;
+    margin: 100px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.content-about {
+    position: relative;
+    left: 1%;
+    width: 200px;
+    margin: 0 0 3% 3%;
+    float: right;
+}
+img{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 20px;
+}
+button{
+    background: rgb(238, 234, 234);
+    cursor: zoom-in;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 3rem;
+    opacity: 3;
+    position: relative;
+    width: 3rem;
+}
+h2{
+    font-family: 'Courier New';
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
