@@ -152,7 +152,7 @@ span#nama-web {
 
 /*------- Mengatur Tampilan Button Pemesanan pada Konten Judul -------*/
 
-#btn-buat {
+#btn-menu {
     background-color: #f2bf63;
     font-weight: 600;
     height: 30px;
@@ -167,14 +167,14 @@ span#nama-web {
     padding-right: 25px;
 }
 
-#buat-skrg {
+#daftar-menu {
     font-size: 15px;
     color: #353535;
     text-decoration: none;
 }
 
-#btn-buat:hover,
-#buat-skrg:hover {
+#btn-menu:hover,
+#daftar-menu:hover {
     cursor: pointer;
     background-color: #353535;
     color: #f2bf63;
@@ -254,6 +254,18 @@ span#nama-web {
 .cd-container p {
     font-size: 11.5px;
     text-align: justify;
+}
+
+
+/*------- Import Font .cr-content -------*/
+
+.card-content2 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.card-content2 .card {
+    max-width: 75px;
 }
 
 
