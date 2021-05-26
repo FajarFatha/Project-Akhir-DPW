@@ -13,6 +13,9 @@
     width: 100%;
     background-color: #353535;
     text-align: center;
+    position: fixed;
+    padding: 17px;
+    top: 0;
 }
 
 
@@ -21,7 +24,6 @@
 img#logo-web {
     height: 45px;
     width: 45px;
-    margin-top: 17px;
 }
 
 
@@ -31,8 +33,8 @@ a#nama-web {
     text-decoration: none;
     color: white;
     font-family: 'East Octopus';
-    font-size: 35px;
-    margin-left: 10px;
+    font-size: 40px;
+    margin: 0;
 }
 
 
@@ -40,7 +42,7 @@ a#nama-web {
 
 span#nama-web {
     color: #f2bf63;
-    margin-left: 5px;
+    margin-left: 7px;
 }
 
 
@@ -52,4 +54,78 @@ span#nama-web {
 }
 
 
-/**/
+/*------- Tampilan Navigation Bar -------*/
+
+.navbar {
+    background-color: #f2bf63;
+    height: 46px;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    font-family: Arial;
+    font-weight: 700;
+    color: #353535;
+}
+
+
+/*------- Mengatur posisi elemen navbar -------*/
+
+.navbar-left {
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+}
+
+
+/*------- Mengatur Tampilan Tulisan Menu -------*/
+
+.navbar p {
+    padding: 14px 16px;
+}
+
+
+/*------- Mengatur Tampilan Button Menu -------*/
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: #353535;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #353535;
+    color: white;
+}
+
+
+/*------- Mengatur Tampilan Konten Judul -------*/
+
+.bg-content {
+    height: 720px;
+    background: url(../img/bg-masakan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jd-content {
+    height: 720px;
+    margin-top: 126px;
+    padding-top: 123px;
+    color: white;
+    font-family: Arial;
+}
