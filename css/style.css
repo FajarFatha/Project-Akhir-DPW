@@ -128,4 +128,45 @@ span#nama-web {
     padding-top: 123px;
     color: white;
     font-family: Arial;
+    text-align: center;
+}
+
+.jd-content h1 {
+    font-size: 100px;
+    padding-top: 24px;
+}
+
+#sub-jd {
+    font-size: 20px;
+}
+
+
+/*------- Mengatur Tampilan Button Pemesanan pada Konten Judul -------*/
+
+#btn-buat {
+    background-color: #f2bf63;
+    font-weight: 600;
+    height: 30px;
+    width: 175px;
+    border-radius: 50px;
+    line-height: 26px;
+    margin-top: 35px;
+    margin-left: 42%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#buat-skrg {
+    font-size: 15px;
+    color: #353535;
+    text-decoration: none;
+}
+
+#btn-buat:hover,
+#buat-skrg:hover {
+    cursor: pointer;
+    background-color: #353535;
+    color: #f2bf63;
 }
