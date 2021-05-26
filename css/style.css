@@ -212,10 +212,7 @@ span#nama-web {
     margin-top: 20px;
     padding-bottom: 50px;
     padding: 45px;
-    background-color: #fff;
     border-color: #d0ccbf;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
     width: 40%;
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -223,6 +220,8 @@ span#nama-web {
 
 .card:hover {
     background-color: beige;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
 .box-numb {
@@ -262,10 +261,17 @@ span#nama-web {
 .card-content2 {
     display: grid;
     grid-template-columns: repeat(5, auto);
+    margin-bottom: 50px;
 }
 
 .card-content2 .card {
-    max-width: 75px;
+    margin-left: 55px;
+    max-width: 85px;
+}
+
+.card-content2 h4 {
+    font-size: 10px;
+    padding-left: 10px;
 }
 
 
