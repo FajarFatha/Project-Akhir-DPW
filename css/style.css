@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial;
 }
 
 
@@ -62,7 +63,6 @@ span#nama-web {
     width: 100%;
     position: fixed;
     top: 80px;
-    font-family: Arial;
     font-weight: 700;
     color: #353535;
 }
@@ -169,4 +169,42 @@ span#nama-web {
     cursor: pointer;
     background-color: #353535;
     color: #f2bf63;
+}
+
+
+/**/
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.ct-content {
+    height: 75px;
+    background-color: #f2bf63;
+    color: black;
+    font-weight: 800;
+    padding: 25px;
+}
+
+.ct-content img {
+    height: 15px;
+    width: 15px;
+}
+
+.ct-content h5 {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+
+/*------- Tampilan Copyright -------*/
+
+footer {
+    background-color: #353535;
+    color: #fff;
+    height: 20px;
+    width: auto;
+    padding: 35px;
+    text-align: center;
 }
