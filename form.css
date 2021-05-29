@@ -1,0 +1,135 @@
+body{
+    background-color: #69c1f5;
+}
+.nav {
+    background-color: #33a7e0;
+    height: 90px;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
+.navbar-right {
+    float: right;
+}
+ul {
+    list-style: none;
+    padding-right: 2em;
+}
+
+ul li {
+    display: inline-block;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    padding-right: 1em;
+}
+
+ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul li a:hover {
+    color: #020242;
+}
+.about-content {
+    margin-top: 100px;
+}
+.about-content span {
+    display: inline-block;
+    width: 90%;
+    position: relative;
+    left: 3.5%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #00a2ff;
+    font-size: 88px;
+    font-family: "Beauty Sunflower";
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.753);
+    margin-bottom: 0px;
+}
+@font-face {
+    font-family: "Beauty Sunflower";
+    src: url('Manta Style Script DEMO.ttf') format('truetype');
+}
+.form {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    font-family: 'Quicksand', sans-serif;
+    color: #232c2e;
+    background-color: #00a2ff;
+    
+}
+.sub-form {
+    padding-top: 18px;
+
+}
+.input-group {
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.input-group span {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#sub-form1 input {
+    width: 450px;
+    height: 30px;
+    padding-left: 25px;
+}
+#btn-cetak {
+    width: 170px;
+    margin-top: 20px;
+    margin-left: 26em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    background-color: #0025c9;
+    color: #ffffff;
+    border: 2px solid white;
+}
+
+#btn-cetak:hover {
+    background-color: rgb(255, 255, 255);
+    color: #0a70b4;
+    border: 2px solid #4848fc;
+}
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-bottom: 50px;
+}
+h3,
+h5 {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+iframe {
+    height: 110px;
+    width: 375px;
+    padding-left: 50px;
+}
+
+#cp-right {
+    text-align: center;
+    font-family: Arial;
+    color: #ffffff;
+    background-color: #708d94;
+    padding: 30px;
+}
