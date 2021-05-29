@@ -257,12 +257,11 @@ span#nama-web {
 }
 
 
-/*------- Import Font .cr-content -------*/
+/*------- Mengatur Tampilan Jaminan Pelayanan-------*/
 
 .card-content2 {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    margin-bottom: 50px;
 }
 
 .card-content2 .card {
@@ -270,7 +269,6 @@ span#nama-web {
     max-width: 85px;
     width: 40%;
     margin-top: 20px;
-    padding-bottom: 50px;
     padding: 45px;
 }
 
@@ -280,7 +278,7 @@ span#nama-web {
 }
 
 
-/*------- Import Font .cr-content -------*/
+/*------- Import Font Langkah Pemesanan -------*/
 
 @font-face {
     font-family: 'Mont Heavy';
@@ -290,6 +288,180 @@ span#nama-web {
 @font-face {
     font-family: 'Mont Light';
     src: url(font/Mont-ExtraLightDEMO.otf);
+}
+
+
+/*------- Tampilan Background Menu + Curved Background-------*/
+
+svg {
+    display: block;
+}
+
+.bg-curved2 {
+    background-color: #767a7d;
+}
+
+.bg-daftarMenu {
+    background-color: #767a7d;
+    height: auto;
+    width: 100%;
+}
+
+
+/*------- Mengatur Tampilan Menu Pilih Makanan/Minuman-------*/
+
+.js-bg-transisi {
+    text-align: center;
+    font-family: 'Cream';
+    margin-top: 50px;
+}
+
+.js-bg-transisi h1 {
+    font-size: 70px;
+}
+
+.js-bg-transisi h4 {
+    font-size: 35px;
+}
+
+.js-bg-transisi img {
+    height: 165px;
+    width: auto;
+    padding-bottom: 17px;
+}
+
+.js-bg-transisi img:hover {
+    height: 175px;
+    width: auto;
+}
+
+.pilih-menu {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.card-pmenu {
+    background-color: #fff;
+    border-radius: 3em;
+    box-shadow: 0 4px 8px 0 rgba(172, 165, 165, 0.938);
+    padding: 27px;
+    padding-bottom: 60px;
+    margin: 175px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.card-pmenu:hover {
+    background-color: #353535;
+    color: #fff;
+    border-radius: 3em;
+    box-shadow: 0 4px 8px 0 #f2bf63;
+    padding: 27px;
+    margin: 175px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*------- Import Font Untuk Menu -------*/
+
+@font-face {
+    font-family: 'Cream';
+    src: url(font/cream-DEMO.otf);
+}
+
+@font-face {
+    font-family: 'Caviar Dreams Bold';
+    src: url(font/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Caviar Dreams Light';
+    src: url(font/CaviarDreams.ttf);
+}
+
+
+/*------- Tampilan Daftar Menu Minuman + Makanan -------*/
+
+.daftar-minuman {
+    background-color: #767a7d;
+}
+
+
+/*------- Tampilan Daftar Menu Makanan -------*/
+
+.daftar-makanan {
+    background-color: #767a7d;
+}
+
+
+/*------- Mengatur Ukuran dan Tampilan Navbar Daftar Menu -------*/
+
+.nav-daftar {
+    height: 30px;
+    width: auto;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.nav-daftar .material-icons {
+    font-size: 10px;
+    margin-right: 2px;
+}
+
+
+/*------- Mengatur Tata Letak Bagian Kanan - Kiri Navbar -------*/
+
+.nav-df-left {
+    float: left;
+}
+
+.nav-df-right {
+    float: right;
+}
+
+
+/*------- Mengatur Tampilan Grid Daftar Menu Makanan + Minuman -------*/
+
+.content-daftar {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 50px;
+}
+
+
+/*------- Mengatur Tampilan Card Daftar Menu Makanan -------*/
+
+.card-daftar {
+    background-color: #fff;
+    height: 188px;
+    width: 185px;
+    padding: 65px;
+    margin: 75px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*------- Mengatur Tampilan Gambar -------*/
+
+#img-daftar {
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 0px;
+}
+
+#img-daftar:hover {
+    height: 153px;
+    width: 153px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 0px;
 }
 
 
