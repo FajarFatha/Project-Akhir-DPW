@@ -431,8 +431,7 @@ svg {
 
 .content-daftar {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    padding: 50px;
+    grid-template-columns: repeat(4, auto);
 }
 
 
@@ -442,8 +441,11 @@ svg {
     background-color: #fff;
     height: 188px;
     width: 185px;
-    padding: 65px;
-    margin: 75px;
+    padding-top: 35px;
+    padding-bottom: 95px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 45px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     float: left;
 }
