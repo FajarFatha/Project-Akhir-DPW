@@ -132,6 +132,9 @@ function checkout(){
             tothasil.push(hasil)
         }
     }
+    if(totnama.length==0){
+        window.alert("anda belum memilih menu")
+    }
 
 }
 
