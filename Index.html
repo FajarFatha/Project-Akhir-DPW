@@ -168,19 +168,7 @@
                 </div>
             </div>
             <hr>
-            <div class="content-daftar">
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Minuman_Angsle.png" id="img-daftar">
-                    <p id="nama-daftar">Angsle</p>
-                    <p id="harga-daftar">Rp 8.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="8000">
-                    <input type="text" style="display: none;" class="nama1" value="Angsle">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
+            <div class="content-daftar1">
                 <div class="card-daftar">
                     <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Campur.png" id="img-daftar">
@@ -302,7 +290,19 @@
                     </div>
                 </div>
             </div>
-            <div class="content-daftar">
+            <div class="content-daftar1">
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Minuman_Angsle.png" id="img-daftar">
+                    <p id="nama-daftar">Angsle</p>
+                    <p id="harga-daftar">Rp 8.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="8000">
+                    <input type="text" style="display: none;" class="nama1" value="Angsle">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
                 <div class="card-daftar">
                     <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Kopi Hangat.png" id="img-daftar">
@@ -376,7 +376,7 @@
                 </div>
                 <div class="nav-df-right">
                     <label for="makanan">Sort by:</label>
-                    <select name="makanan" id="makanan">
+                    <select name="makanan" id="makanan" onchange="sortmakanan()">
                         <option selected disabled>Sort Menu</option>
                         <option value="Kuah">Kuah</option>
                         <option value="Nasi">Nasi</option>
@@ -403,42 +403,6 @@
                 </div>
                 <div class="card-daftar">
                     <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Capcay.png" id="img-daftar">
-                    <p id="nama-daftar">Capcay</p>
-                    <p id="harga-daftar">Rp 15.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="15000">
-                    <input type="text" style="display: none;" class="nama1" value="Capcay">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Donat.png" id="img-daftar">
-                    <p id="nama-daftar">Donat Kentang</p>
-                    <p id="harga-daftar">Rp 7.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="7000">
-                    <input type="text" style="display: none;" class="nama1" value="Donat Kentang">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Gado-gado.png" id="img-daftar">
-                    <p id="nama-daftar">Gado-gado</p>
-                    <p id="harga-daftar">Rp 10.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="10000">
-                    <input type="text" style="display: none;" class="nama1" value="Gado-gado">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Gulai.png" id="img-daftar">
                     <p id="nama-daftar">Gulai</p>
                     <p id="harga-daftar">Rp 13.000,00</p>
@@ -451,11 +415,11 @@
                 </div>
                 <div class="card-daftar">
                     <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Klepon.png" id="img-daftar">
-                    <p id="nama-daftar">Klepon</p>
-                    <p id="harga-daftar">Rp 6.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="6000">
-                    <input type="text" style="display: none;" class="nama1" value="Klepon">
+                    <img src="./img/Makanan_Rawon.png" id="img-daftar">
+                    <p id="nama-daftar">Rawon</p>
+                    <p id="harga-daftar">Rp 14.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="14000">
+                    <input type="text" style="display: none;" class="nama1" value="Rawon">
                     <div class="injum" style="display: none;">
                         <label for="jum">Jumlah: </label>
                         <input type="number" class="jum" >
@@ -463,40 +427,18 @@
                 </div>
                 <div class="card-daftar">
                     <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Kwetiau.png" id="img-daftar">
-                    <p id="nama-daftar">Kwetiau</p>
-                    <p id="harga-daftar">Rp 10.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="10000">
-                    <input type="text" style="display: none;" class="nama1" value="Kwetiau">
+                    <img src="./img/Makanan_Soto.png" id="img-daftar">
+                    <p id="nama-daftar">Soto</p>
+                    <p id="harga-daftar">Rp 12.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="12000">
+                    <input type="text" style="display: none;" class="nama1" value="Soto">
                     <div class="injum" style="display: none;">
                         <label for="jum">Jumlah: </label>
                         <input type="number" class="jum" >
                     </div>
                 </div>
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Mie Ayam.png" id="img-daftar">
-                    <p id="nama-daftar">Mie Ayam</p>
-                    <p id="harga-daftar">Rp 10.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="10000">
-                    <input type="text" style="display: none;" class="nama1" value="Mie Ayam">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Mie Goreng.png" id="img-daftar">
-                    <p id="nama-daftar">Mie Goreng</p>
-                    <p id="harga-daftar">Rp 10.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="10000">
-                    <input type="text" style="display: none;" class="nama1" value="Mie Goreng">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
+            </div>
+            <div class="content-daftar">
                 <div class="card-daftar">
                     <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Nasi Campur.png" id="img-daftar">
@@ -569,6 +511,122 @@
                         <input type="number" class="jum" >
                     </div>
                 </div>
+            </div>
+            <div class="content-daftar">
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Makanan_Kwetiau.png" id="img-daftar">
+                    <p id="nama-daftar">Kwetiau</p>
+                    <p id="harga-daftar">Rp 10.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="10000">
+                    <input type="text" style="display: none;" class="nama1" value="Kwetiau">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Makanan_Mie Ayam.png" id="img-daftar">
+                    <p id="nama-daftar">Mie Ayam</p>
+                    <p id="harga-daftar">Rp 10.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="10000">
+                    <input type="text" style="display: none;" class="nama1" value="Mie Ayam">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Makanan_Mie Goreng.png" id="img-daftar">
+                    <p id="nama-daftar">Mie Goreng</p>
+                    <p id="harga-daftar">Rp 10.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="10000">
+                    <input type="text" style="display: none;" class="nama1" value="Mie Goreng">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
+            </div>
+            <div class="content-daftar">
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Makanan_Sate.png" id="img-daftar">
+                    <p id="nama-daftar">Sate</p>
+                    <p id="harga-daftar">Rp 13.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="13000">
+                    <input type="text" style="display: none;" class="nama1" value="Sate">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
+            </div>
+            <div class="content-daftar">
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Makanan_Gado-gado.png" id="img-daftar">
+                    <p id="nama-daftar">Gado-gado</p>
+                    <p id="harga-daftar">Rp 10.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="10000">
+                    <input type="text" style="display: none;" class="nama1" value="Gado-gado">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Makanan_Capcay.png" id="img-daftar">
+                    <p id="nama-daftar">Capcay</p>
+                    <p id="harga-daftar">Rp 15.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="15000">
+                    <input type="text" style="display: none;" class="nama1" value="Capcay">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Makanan_Rujak Cingur.png" class="img-daftar">
+                    <p id="nama-daftar">Rujak Cingur</p>
+                    <p id="harga-daftar">Rp 13.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="13000">
+                    <input type="text" style="display: none;" class="nama1" value="Rujak Cingur">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
+            </div>
+            <div class="content-daftar">
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Makanan_Donat.png" id="img-daftar">
+                    <p id="nama-daftar">Donat Kentang</p>
+                    <p id="harga-daftar">Rp 7.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="7000">
+                    <input type="text" style="display: none;" class="nama1" value="Donat Kentang">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
+                <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
+                    <img src="./img/Makanan_Klepon.png" id="img-daftar">
+                    <p id="nama-daftar">Klepon</p>
+                    <p id="harga-daftar">Rp 6.000,00</p>
+                    <input type="number" class="harga" style="display: none;" value="6000">
+                    <input type="text" style="display: none;" class="nama1" value="Klepon">
+                    <div class="injum" style="display: none;">
+                        <label for="jum">Jumlah: </label>
+                        <input type="number" class="jum" >
+                    </div>
+                </div>
                 <div class="card-daftar">
                     <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Onde-onde.png" id="img-daftar">
@@ -593,56 +651,9 @@
                         <input type="number" class="jum" >
                     </div>
                 </div>
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Rawon.png" id="img-daftar">
-                    <p id="nama-daftar">Rawon</p>
-                    <p id="harga-daftar">Rp 14.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="14000">
-                    <input type="text" style="display: none;" class="nama1" value="Rawon">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Rujak Cingur.png" class="img-daftar">
-                    <p id="nama-daftar">Rujak Cingur</p>
-                    <p id="harga-daftar">Rp 13.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="13000">
-                    <input type="text" style="display: none;" class="nama1" value="Rujak Cingur">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Sate.png" id="img-daftar">
-                    <p id="nama-daftar">Sate</p>
-                    <p id="harga-daftar">Rp 13.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="13000">
-                    <input type="text" style="display: none;" class="nama1" value="Sate">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
-                <div class="card-daftar">
-                    <input type="checkbox" name="pilihanmenu"><br>
-                    <img src="./img/Makanan_Soto.png" id="img-daftar">
-                    <p id="nama-daftar">Soto</p>
-                    <p id="harga-daftar">Rp 12.000,00</p>
-                    <input type="number" class="harga" style="display: none;" value="12000">
-                    <input type="text" style="display: none;" class="nama1" value="Soto">
-                    <div class="injum" style="display: none;">
-                        <label for="jum">Jumlah: </label>
-                        <input type="number" class="jum" >
-                    </div>
-                </div>
-                <button style="width: 400px; height: 100px; background-color: orange;"><h3>Checkout</h3></button>
             </div>
+            <button style="width: 400px; height: 100px; background-color: orange;"><h3>Checkout</h3></button>
+
         </div>
         <div class="bg-curved2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

@@ -21,7 +21,7 @@ function makanan(){
 
 function sortminuman(){
     var pilihan = document.getElementById("minuman");
-    var minuman=document.getElementsByClassName("content-daftar");
+    var minuman=document.getElementsByClassName("content-daftar1");
     if(pilihan.value=="Dingin"){
         minuman[0].style.display="block"
         minuman[1].style.display="none"
@@ -32,49 +32,49 @@ function sortminuman(){
 }
 
 function sortmakanan(){
-    var pilihan = document.getElementById("mskakanan");
+    var pilihan = document.getElementById("makanan");
     var makanan=document.getElementsByClassName("content-daftar");
     if(pilihan.value=="Kuah"){
-        minuman[0].style.display="block"
-        minuman[1].style.display="none"
-        minuman[2].style.display="none"
-        minuman[3].style.display="none"
-        minuman[4].style.display="none"
-        minuman[5].style.display="none"
+        makanan[0].style.display="block"
+        makanan[1].style.display="none"
+        makanan[2].style.display="none"
+        makanan[3].style.display="none"
+        makanan[4].style.display="none"
+        makanan[5].style.display="none"
     }else if(pilihan.value=="Nasi"){
-        minuman[0].style.display="none"
-        minuman[1].style.display="block"
-        minuman[2].style.display="none"
-        minuman[3].style.display="none"
-        minuman[4].style.display="none"
-        minuman[5].style.display="none"
+        makanan[0].style.display="none"
+        makanan[1].style.display="block"
+        makanan[2].style.display="none"
+        makanan[3].style.display="none"
+        makanan[4].style.display="none"
+        makanan[5].style.display="none"
     }else if(pilihan.value=="Mie"){
-        minuman[0].style.display="none"
-        minuman[1].style.display="none"
-        minuman[2].style.display="block"
-        minuman[3].style.display="none"
-        minuman[4].style.display="none"
-        minuman[5].style.display="none"
+        makanan[0].style.display="none"
+        makanan[1].style.display="none"
+        makanan[2].style.display="block"
+        makanan[3].style.display="none"
+        makanan[4].style.display="none"
+        makanan[5].style.display="none"
     }else if(pilihan.value=="Panggang"){
-        minuman[0].style.display="none"
-        minuman[1].style.display="none"
-        minuman[2].style.display="none"
-        minuman[3].style.display="block"
-        minuman[4].style.display="none"
-        minuman[5].style.display="none"
+        makanan[0].style.display="none"
+        makanan[1].style.display="none"
+        makanan[2].style.display="none"
+        makanan[3].style.display="block"
+        makanan[4].style.display="none"
+        makanan[5].style.display="none"
     }else if(pilihan.value=="Sayur"){
-        minuman[0].style.display="none"
-        minuman[1].style.display="none"
-        minuman[2].style.display="none"
-        minuman[3].style.display="none"
-        minuman[4].style.display="block"
-        minuman[5].style.display="none"
+        makanan[0].style.display="none"
+        makanan[1].style.display="none"
+        makanan[2].style.display="none"
+        makanan[3].style.display="none"
+        makanan[4].style.display="block"
+        makanan[5].style.display="none"
     }else if(pilihan.value=="Dessert"){
-        minuman[0].style.display="none"
-        minuman[1].style.display="none"
-        minuman[2].style.display="none"
-        minuman[3].style.display="none"
-        minuman[4].style.display="none"
-        minuman[5].style.display="block"
+        makanan[0].style.display="none"
+        makanan[1].style.display="none"
+        makanan[2].style.display="none"
+        makanan[3].style.display="none"
+        makanan[4].style.display="none"
+        makanan[5].style.display="block"
     }
 }
