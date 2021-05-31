@@ -178,27 +178,21 @@ function sub(){
     table+="<tr><th colspan=4>Terima Kasih Atas Kunjungan Anda</th></tr>"
 
     document.getElementById("tt").innerHTML=table;
-    Event.preventDefault()
     
 }
 
 function cetak(){
-    var pilihan = document.getElementsByClassName("js-bg-transisi");
-    pilihan[0].style.display="none"
-    pilihan[1].style.display="none"
-    pilihan[2].style.display="none"
     var head = document.getElementsByClassName("header");
     head[0].style.display="none"
     var nav = document.getElementsByClassName("navbar");
     nav[0].style.display="none"
-    document.getElementById("divtabel").style.display="none"
     document.getElementById("divform").style.display="none"
     document.getElementById("pembatas1").style.display="none"
-    document.getElementById("content1").style.display="none"
-    document.getElementById("content2").style.display="none"
     var contact = document.getElementsByClassName("contact");
     contact[0].style.display="none"
-    document.getElementsByTagName("footer").style.display="none"
+    document.getElementById("foot").style.display="none";
+    document.getElementById("tombolcetak").style.display="none"
     window.print()
+    document.getElementById("kembali").style.display="block"
 }
 
