@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
+    <script src="myscript.js"></script>
 </head>
 <body>
     <div class="header">
@@ -25,7 +26,7 @@
             </ul>
         </div>
     </div>
-    <div class="bg-content">
+    <div class="bg-content" id="content1">
         <div class="jd-content">
             <p>
                 <b>Beragam Sajian Menu</b> - pesan makanan tanpa antri.
@@ -35,11 +36,11 @@
             </h1>
             <p id="sub-jd">· Menambahkan kegembiraan dari rasa terbaik · Memberikan sentuhan rasa othentic · Membuat makanan adalah Keterampilan dengan Hati ·</p>
             <div id="btn-menu">
-                <a href="form.html" id="daftar-menu">Lihat Daftar Menu</a>
+                <a href="#" id="daftar-menu" onclick="lihatmenu()">Lihat Daftar Menu</a>
             </div>
         </div>
     </div>
-    <div class="cr-content">
+    <div class="cr-content" id="content2">
         <h1>Bagaimana Cara Melakukan Pemesanan ?</h1>
         <h3>Berikut 2 Langkah yang Dapat Dilakukan</h3>
         <div class="card-content">
@@ -114,7 +115,10 @@
             </div>
         </div>
     </div>
-    <div class="js-bg-transisi">
+    <div id="pembatas1" style="display: none;">
+        <p style="margin-bottom: 100px;"></p>
+    </div>
+    <div class="js-bg-transisi" style="display: none;">
         <div class="bg-curved1">'
             <h1>Pilih Menu</h1>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -123,11 +127,11 @@
         </div>
         <div class="bg-daftarMenu">
             <div class="pilih-menu">
-                <a class="card-pmenu" href="#">
+                <a class="card-pmenu" href="#" onclick="minuman()">
                     <img src="img/logo-drink.png" alt="logo-minuman">
                     <h4>Daftar Minuman</h4>
                 </a>
-                <a class="card-pmenu" href="#">
+                <a class="card-pmenu" href="#" onclick="makanan()">
                     <img src="img/logo-food.png" alt="logo-makanan">
                     <h4>Daftar Makanan</h4>
                 </a>
@@ -139,7 +143,7 @@
             </svg>
         </div>
     </div>
-    <div class="js-bg-transisi">
+    <div class="js-bg-transisi" style="display: none;">
         <div class="bg-curved1">'
             <h1>Daftar Minuman</h1>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -156,86 +160,103 @@
                 </div>
                 <div class="nav-df-right">
                     <label for="minuman">Sort by:</label>
-                    <input list="Minuman" name="minuman" id="minuman" placeholder="sorting menu">
-                    <datalist id="Minuman">
-                        <option value="Dingin">
-                        <option value="Hangat">
-                    </datalist>
+                    <select name="minuman" id="minuman" onchange="sortminuman()">
+                        <option selected disabled>Sort menu</option>
+                        <option value="Dingin">Dingin</option>
+                        <option value="Hangat">Hangat</option>
+                    </select>
                 </div>
             </div>
             <hr>
             <div class="content-daftar">
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Angsle.png" id="img-daftar">
                     <p id="nama-daftar">Angsle</p>
                     <p id="harga-daftar">Rp 8.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Campur.png" id="img-daftar">
                     <p id="nama-daftar">Es Campur</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Doger.png" id="img-daftar">
                     <p id="nama-daftar">Es Doger</p>
                     <p id="harga-daftar">Rp 5.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Jus Alpukat.png" id="img-daftar">
                     <p id="nama-daftar">Es Jus Alpukat</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Jus Buah Naga.png" id="img-daftar">
                     <p id="nama-daftar">Es Jus Buah Naga</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Jus Jambu.png" id="img-daftar">
                     <p id="nama-daftar">Es Jus Jambu</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Jus Mangga.png" id="img-daftar">
                     <p id="nama-daftar">Es Jus Mangga</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Jus Melon.png" id="img-daftar">
                     <p id="nama-daftar">Es Jus Melon</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Jus Sirsak.png" id="img-daftar">
                     <p id="nama-daftar">Es Jus Sirsak</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Kopi.png" id="img-daftar">
                     <p id="nama-daftar">Es Kopi</p>
                     <p id="harga-daftar">Rp 7.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Es Teh.png" id="img-daftar">
                     <p id="nama-daftar">Es Teh</p>
                     <p id="harga-daftar">Rp 5.000,00</p>
                 </div>
+            </div>
+            <div class="content-daftar">
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Kopi Hangat.png" id="img-daftar">
                     <p id="nama-daftar">Kopi Hangat</p>
                     <p id="harga-daftar">Rp 5.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Ronde.png" id="img-daftar">
                     <p id="nama-daftar">Ronde</p>
                     <p id="harga-daftar">Rp 8.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Teh Manis.png" id="img-daftar">
                     <p id="nama-daftar">Teh Manis</p>
                     <p id="harga-daftar">Rp 3.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Minuman_Wedang Jahe.png" id="img-daftar">
                     <p id="nama-daftar">Wedang Jahe</p>
                     <p id="harga-daftar">Rp 5.000,00</p>
@@ -248,7 +269,7 @@
             </svg>
         </div>
     </div>
-    <div class="js-bg-transisi">
+    <div class="js-bg-transisi" style="display: none;">
         <div class="bg-curved1">'
             <h1>Daftar Makanan</h1>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -265,124 +286,146 @@
                 </div>
                 <div class="nav-df-right">
                     <label for="makanan">Sort by:</label>
-                    <input list="Makanan" name="makanan" id="makanan" placeholder="sorting menu">
-                    <datalist id="Makanan">
-                        <option value="Kuah">
-                        <option value="Nasi">
-                        <option value="Mie">
-                        <option value="Panggang">
-                        <option value="Sayur">
-                        <option value="Dessert">
-                    </datalist>
+                    <select name="makanan" id="makanan">
+                        <option selected disabled>Sort Menu</option>
+                        <option value="Kuah">Kuah</option>
+                        <option value="Nasi">Nasi</option>
+                        <option value="Mie">Mie</option>
+                        <option value="Panggang">Panggang</option>
+                        <option value="Sayur">Sayur</option>
+                        <option value="Dessert">Dessert</option>
+                    </select>
                 </div>
             </div>
             <hr>
             <div class="content-daftar">
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Bakso.png" id="img-daftar">
                     <p id="nama-daftar">Bakso</p>
                     <p id="harga-daftar">Rp 12.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Capcay.png" id="img-daftar">
                     <p id="nama-daftar">Capcay</p>
                     <p id="harga-daftar">Rp 15.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Donat.png" id="img-daftar">
                     <p id="nama-daftar">Donat Kentang</p>
                     <p id="harga-daftar">Rp 7.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Gado-gado.png" id="img-daftar">
                     <p id="nama-daftar">Gado-gado</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Gulai.png" id="img-daftar">
                     <p id="nama-daftar">Gulai</p>
                     <p id="harga-daftar">Rp 13.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Klepon.png" id="img-daftar">
                     <p id="nama-daftar">Klepon</p>
                     <p id="harga-daftar">Rp 6.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Kwetiau.png" id="img-daftar">
                     <p id="nama-daftar">Kwetiau</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Mie Ayam.png" id="img-daftar">
                     <p id="nama-daftar">Mie Ayam</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Mie Goreng.png" id="img-daftar">
                     <p id="nama-daftar">Mie Goreng</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Nasi Campur.png" id="img-daftar">
                     <p id="nama-daftar">Nasi Campur</p>
                     <p id="harga-daftar">Rp 11.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Nasi Goreng.png" id="img-daftar">
                     <p id="nama-daftar">Nasi Goreng</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Nasi Gudeg.png" id="img-daftar">
                     <p id="nama-daftar">Nasi Gudeg</p>
                     <p id="harga-daftar">Rp 11.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Nasi Krawu.png" id="img-daftar">
                     <p id="nama-daftar">Nasi Krawu</p>
                     <p id="harga-daftar">Rp 11.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Nasi Kuning.png" id="img-daftar">
                     <p id="nama-daftar">Nasi Kuning</p>
                     <p id="harga-daftar">Rp 12.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Nasi Pecel.png" id="img-daftar">
                     <p id="nama-daftar">Nasi Pecel</p>
                     <p id="harga-daftar">Rp 10.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Onde-onde.png" id="img-daftar">
                     <p id="nama-daftar">Onde-onde</p>
                     <p id="harga-daftar">Rp 5.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Puding.png" id="img-daftar">
                     <p id="nama-daftar">Puding</p>
                     <p id="harga-daftar">Rp 7.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Rawon.png" id="img-daftar">
                     <p id="nama-daftar">Rawon</p>
                     <p id="harga-daftar">Rp 14.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Rujak Cingur.png" class="img-daftar">
                     <p id="nama-daftar">Rujak Cingur</p>
                     <p id="harga-daftar">Rp 13.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Sate.png" id="img-daftar">
                     <p id="nama-daftar">Sate</p>
                     <p id="harga-daftar">Rp 13.000,00</p>
                 </div>
                 <div class="card-daftar">
+                    <input type="checkbox" name="pilihanmenu"><br>
                     <img src="./img/Makanan_Soto.png" id="img-daftar">
                     <p id="nama-daftar">Soto</p>
                     <p id="harga-daftar">Rp 12.000,00</p>
                 </div>
+                <button style="width: 400px; height: 100px; background-color: orange;"><h3>Checkout</h3></button>
             </div>
         </div>
         <div class="bg-curved2">
@@ -406,5 +449,6 @@
     <footer>
         <h4 id="cp-right">Copyright © 2021 | Design & Develop by FAD</h4>
     </footer>
+    <script src="myscript.js"></script>
 </body>
 </html>
