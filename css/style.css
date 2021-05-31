@@ -465,6 +465,62 @@ svg {
     padding-bottom: 0px;
 }
 
+/*Form*/
+@font-face {
+    font-family: "Beauty Sunflower";
+    src: url('Manta Style Script DEMO.ttf') format('truetype');
+}
+.form {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    font-family: 'Quicksand', sans-serif;
+    color: #232c2e;
+    background-color: #00a2ff;
+    
+}
+.sub-form {
+    padding-top: 18px;
+
+}
+.input-group {
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.input-group span {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#sub-form1 input {
+    width: 450px;
+    height: 30px;
+    padding-left: 25px;
+}
+#btn-cetak {
+    width: 170px;
+    margin-top: 20px;
+    margin-left: 26em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    background-color: #0025c9;
+    color: #ffffff;
+    border: 2px solid white;
+}
+
+#btn-cetak:hover {
+    background-color: rgb(255, 255, 255);
+    color: #0a70b4;
+    border: 2px solid #4848fc;
+}
+
 
 /*------- Mengatur Tampilan Class Contact Berisi Informasi Kontak yang Dapat dihubungi -------*/
 
