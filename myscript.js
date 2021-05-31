@@ -183,6 +183,22 @@ function sub(){
 }
 
 function cetak(){
+    var pilihan = document.getElementsByClassName("js-bg-transisi");
+    pilihan[0].style.display="none"
+    pilihan[1].style.display="none"
+    pilihan[2].style.display="none"
+    var head = document.getElementsByClassName("header");
+    head[0].style.display="none"
+    var nav = document.getElementsByClassName("navbar");
+    nav[0].style.display="none"
+    document.getElementById("divtabel").style.display="none"
+    document.getElementById("divform").style.display="none"
+    document.getElementById("pembatas1").style.display="none"
+    document.getElementById("content1").style.display="none"
+    document.getElementById("content2").style.display="none"
+    var contact = document.getElementsByClassName("contact");
+    contact[0].style.display="none"
+    document.getElementsByTagName("footer").style.display="none"
     window.print()
 }
 
