@@ -418,12 +418,7 @@
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
         padding-bottom: 0px;
     }
-    /*Form*/
-    
-    @font-face {
-        font-family: "Beauty Sunflower";
-        src: url('Manta Style Script DEMO.ttf') format('truetype');
-    }
+    /*----- Mengatur Tampilan Form -----*/
     
     #divform {
         height: auto;
@@ -491,6 +486,47 @@
         color: #f2bf63;
         border: 2px solid #f2bf63;
         box-shadow: 0 6px 8px 0 rgb(99, 95, 95);
+    }
+    /*------- Mengatur Tampilan Struk Cetak Pesanan-------*/
+    
+    .divtabel {
+        display: none;
+        height: auto;
+        width: auto;
+        margin-left: 480px;
+        margin-right: 480px;
+        margin-top: 50px;
+        margin-bottom: 65px;
+        background-color: #fff;
+        box-shadow: 0 6px 8px 0 rgb(99, 95, 95);
+    }
+    
+    #divtabel {
+        padding: 30px;
+    }
+    
+    #tombolcetak {
+        background-color: #f2bf63;
+        box-shadow: 0 6px 8px 0 rgb(99, 95, 95);
+        border-color: #353535;
+        color: #353535;
+        font-weight: 700;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 70px;
+        margin-top: 15px;
+        margin-left: 45%;
+        margin-right: 45%;
+        margin-bottom: 25px;
+    }
+    
+    #tombolcetak:hover {
+        background-color: #353535;
+        box-shadow: 0 2px 4px 0 rgb(99, 95, 95);
+        border-color: #f2bf63;
+        color: #f2bf63;
     }
     /*------- Mengatur Tampilan Class Contact Berisi Informasi Kontak yang Dapat dihubungi -------*/
     
