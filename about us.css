@@ -5,65 +5,26 @@
     padding: 0;
 }
 
-
-.nav {
-    background-color: #33a7e0;
-    height: 90px;
-    width: 100%;
-    font-family: 'Nunito', sans-serif;
-    position: fixed;
-    z-index: 99;
-    top: 0;
-}
-.navbar-right {
-    float: right;
-}
-ul {
-    list-style: none;
-    padding-right: 2em;
-}
-
-ul li {
-    display: inline-block;
-    padding-top: 35px;
-    padding-bottom: 10px;
-    padding-right: 1em;
-}
-
-ul li a {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
-ul li a:hover {
-    color: #020242;
-}
-
-.about-content {
-    margin-top: 100px;
-}
-.about-content span {
-    display: inline-block;
-    width: 90%;
-    position: relative;
-    left: 3.5%;
-    padding: 20px;
+.container-about h1 {
     border-radius: 15px;
     text-align: center;
-    font-weight: bold;
-    color: #00a2ff;
+    color: #f2bf63;
     font-size: 88px;
-    font-family: "Calypsoka One";
+    font-family: 'Calypsoka One';
     text-shadow: 3px 4px rgba(0, 0, 0, 0.753);
-    margin-bottom: 0px;
+    margin-bottom: 50px;
+    top: 150px;
 }
+
 @font-face {
     font-family: 'Calypsoka One';
     src: url("CalypsokaOne.ttf");
 }
+
 .container-about {
     text-align: center;
+    margin-top: 175px;
+    margin-bottom: 100px;
 }
 
 .content-about {
@@ -75,7 +36,7 @@ ul li a:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-img{
+.container-about img {
     width: 300px;
     height: 400px;
     display: flex;
@@ -84,17 +45,20 @@ img{
     border-color: rgb(0, 0, 0);
     margin-top: 20px;
 }
-.desc{
+
+.desc {
     text-align: center;
     padding: 10px 20px;
 }
 
-h2{
+h2 {
     font-family: 'Courier New';
     font-size: 28px;
     font-weight: bold;
     font-style: italic;
 }
+
+
 /*------- Mengatur Tampilan Class Contact Berisi Informasi Kontak yang Dapat dihubungi -------*/
 
 .contact {
