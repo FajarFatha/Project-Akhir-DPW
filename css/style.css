@@ -1,564 +1,530 @@
-/*------- Tampilan dasar berlaku keseluruhan selector -------*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-/*------- Header penampung logo-nama website -------*/
-
-.header {
-    height: 80px;
-    width: 100%;
-    background-color: #353535;
-    text-align: center;
-    position: fixed;
-    padding: 17px;
-    top: 0;
-}
-
-
-/*------- Tampilan tag img logo website-------*/
-
-img#logo-web {
-    height: 45px;
-    width: 45px;
-}
-
-
-/*------- Tampilan tag a nama website-------*/
-
-a#nama-web {
-    text-decoration: none;
-    color: white;
-    font-family: 'East Octopus';
-    font-size: 40px;
-    margin: 0;
-}
-
-
-/*------- Tampilan tag span nama website-------*/
-
-span#nama-web {
-    color: #f2bf63;
-    font-family: 'East Octopus';
-    margin-left: 7px;
-}
-
-
-/*------- Import font nama website -------*/
-
-@font-face {
-    font-family: 'East Octopus';
-    src: url(font/East-Octopus.otf);
-}
-
-
-/*------- Tampilan Navigation Bar -------*/
-
-.navbar {
-    background-color: #f2bf63;
-    height: 46px;
-    width: 100%;
-    position: fixed;
-    top: 80px;
-    font-family: Arial;
-    font-weight: 700;
-    color: #353535;
-}
-
-
-/*------- Mengatur posisi elemen navbar -------*/
-
-.navbar-left {
-    float: left;
-    padding-top: 16px;
-}
-
-.navbar-right {
-    float: right;
-}
-
-
-/*------- Mengatur Tampilan Tulisan Menu -------*/
-
-.navbar-left a {
-    text-decoration: none;
-    padding-left: 14px;
-    color: #353535;
-}
-
-.navbar-left a:hover {
-    padding: 14px 16px;
-    color: #fff;
-}
-
-
-/*------- Mengatur Tampilan Button Menu -------*/
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.navbar li {
-    float: left;
-}
-
-.navbar li a {
-    display: block;
-    color: #353535;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar li a:hover {
-    background-color: #353535;
-    color: white;
-}
-
-
-/*------- Mengatur Tampilan Konten Judul -------*/
-
-.bg-content {
-    height: 720px;
-    background: url(../img/bg-masakan.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.jd-content {
-    height: 720px;
-    margin-top: 126px;
-    padding-top: 123px;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-}
-
-.jd-content h1 {
-    font-size: 100px;
-    padding-top: 24px;
-}
-
-#sub-jd {
-    font-size: 20px;
-}
-
-
-/*------- Mengatur Tampilan Button Pemesanan pada Konten Judul -------*/
-
-#btn-menu {
-    background-color: #f2bf63;
-    font-weight: 600;
-    height: 30px;
-    width: 175px;
-    border-radius: 50px;
-    line-height: 26px;
-    margin-top: 35px;
-    margin-left: 42%;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-#daftar-menu {
-    font-size: 15px;
-    color: #353535;
-    text-decoration: none;
-}
-
-#btn-menu:hover,
-#daftar-menu:hover {
-    cursor: pointer;
-    background-color: #353535;
-    color: #f2bf63;
-}
-
-
-/*------- Mengatur Tampilan Langkah-langkan Pemesanan -------*/
-
-.cr-content {
-    text-align: center;
-    font-family: 'Mont Light';
-}
-
-.cr-content h1 {
-    font-family: 'Mont Heavy';
-    color: #232c2e;
-    margin: 35px;
-}
-
-.cr-content h3 {
-    font-family: 'Mont Heavy';
-    color: #7e8276;
-    margin: 15px;
-}
-
-.card-content {
-    display: grid;
-    grid-template-rows: repeat(1, auto);
-    padding-left: 520px;
-    padding-right: auto;
-    padding-bottom: 50px;
-}
-
-.card-content .card {
-    margin-top: 20px;
-    padding-bottom: 50px;
-    padding: 45px;
-    border-color: #d0ccbf;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 40%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-}
-
-.card:hover {
-    background-color: beige;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-}
-
-.box-numb {
-    background-color: rgb(212, 178, 85);
-    height: 50px;
-    width: 50px;
-    padding: 10px;
-}
-
-.box-numb p {
-    font-family: 'Mont Heavy';
-    font-size: 35px;
-    color: #7e8276;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
-}
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-}
-
-.material-icons {
-    font-size: 70px;
-    margin-left: 10px;
-    margin-top: 3px;
-}
-
-.cd-container p {
-    font-size: 11.5px;
-    text-align: justify;
-}
-
-
-/*------- Mengatur Tampilan Jaminan Pelayanan-------*/
-
-.card-content2 {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-}
-
-.card-content2 .card {
-    margin-left: 55px;
-    max-width: 85px;
-    width: 40%;
-    margin-top: 20px;
-    padding: 45px;
-}
-
-.card-content2 h4 {
-    font-size: 10px;
-    padding-left: 10px;
-}
-
-
-/*------- Import Font Langkah Pemesanan -------*/
-
-@font-face {
-    font-family: 'Mont Heavy';
-    src: url(font/Mont-HeavyDEMO.otf);
-}
-
-@font-face {
-    font-family: 'Mont Light';
-    src: url(font/Mont-ExtraLightDEMO.otf);
-}
-
-
-/*------- Tampilan Background Menu + Curved Background-------*/
-
-svg {
-    display: block;
-}
-
-.bg-curved2 {
-    background-color: #767a7d;
-}
-
-.bg-daftarMenu {
-    background-color: #767a7d;
-    height: auto;
-    width: 100%;
-}
-
-
-/*------- Mengatur Tampilan Menu Pilih Makanan/Minuman-------*/
-
-.js-bg-transisi {
-    text-align: center;
-    font-family: 'Cream';
-    margin-top: 50px;
-}
-
-.js-bg-transisi h1 {
-    font-size: 70px;
-}
-
-.js-bg-transisi h4 {
-    font-size: 35px;
-}
-
-.js-bg-transisi img {
-    height: 165px;
-    width: auto;
-    padding-bottom: 17px;
-}
-
-.js-bg-transisi img:hover {
-    height: 175px;
-    width: auto;
-}
-
-.pilih-menu {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-}
-
-.card-pmenu {
-    background-color: #fff;
-    border-radius: 3em;
-    box-shadow: 0 4px 8px 0 rgba(172, 165, 165, 0.938);
-    padding: 27px;
-    padding-bottom: 60px;
-    margin: 175px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-decoration: none;
-    color: black;
-}
-
-.card-pmenu:hover {
-    background-color: #353535;
-    color: #fff;
-    border-radius: 3em;
-    box-shadow: 0 4px 8px 0 #f2bf63;
-    padding: 27px;
-    margin: 175px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-
-/*------- Import Font Untuk Menu -------*/
-
-@font-face {
-    font-family: 'Cream';
-    src: url(font/cream-DEMO.otf);
-}
-
-@font-face {
-    font-family: 'Caviar Dreams Bold';
-    src: url(font/CaviarDreams_Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Caviar Dreams Light';
-    src: url(font/CaviarDreams.ttf);
-}
-
-
-/*------- Tampilan Daftar Menu Minuman + Makanan -------*/
-
-.daftar-minuman {
-    background-color: #767a7d;
-}
-
-
-/*------- Tampilan Daftar Menu Makanan -------*/
-
-.daftar-makanan {
-    background-color: #767a7d;
-}
-
-
-/*------- Mengatur Ukuran dan Tampilan Navbar Daftar Menu -------*/
-
-.nav-daftar {
-    height: 30px;
-    width: auto;
-    padding-top: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 0px;
-    font-size: 15px;
-    color: #fff;
-}
-
-.nav-daftar .material-icons {
-    font-size: 10px;
-    margin-right: 2px;
-}
-
-
-/*------- Mengatur Tata Letak Bagian Kanan - Kiri Navbar -------*/
-
-.nav-df-left {
-    float: left;
-}
-
-.nav-df-right {
-    float: right;
-}
-
-
-/*------- Mengatur Tampilan Grid Daftar Menu Makanan + Minuman -------*/
-
-.content-daftar {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-}
-
-
-/*------- Mengatur Tampilan Card Daftar Menu Makanan -------*/
-
-.card-daftar {
-    background-color: #fff;
-    height: 188px;
-    width: 185px;
-    padding-top: 35px;
-    padding-bottom: 95px;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin: 45px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    float: left;
-}
-
-
-/*------- Mengatur Tampilan Gambar -------*/
-
-#img-daftar {
-    height: 150px;
-    width: 150px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
-    padding-bottom: 0px;
-}
-
-#img-daftar:hover {
-    height: 153px;
-    width: 153px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
-    padding-bottom: 0px;
-}
-
-/*Form*/
-@font-face {
-    font-family: "Beauty Sunflower";
-    src: url('Manta Style Script DEMO.ttf') format('truetype');
-}
-.form {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
-    margin-top: 0px;
-    font-family: 'Quicksand', sans-serif;
-    color: #232c2e;
-    background-color: #00a2ff;
+    /*------- Tampilan dasar berlaku keseluruhan selector -------*/
     
-}
-.sub-form {
-    padding-top: 18px;
-
-}
-.input-group {
-    margin-top: 8px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-.input-group span {
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
-}
-#sub-form1 input {
-    width: 450px;
-    height: 30px;
-    padding-left: 25px;
-}
-#btn-cetak {
-    width: 170px;
-    margin-top: 20px;
-    margin-left: 26em;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    outline: none;
-    cursor: pointer;
-    background-color: #0025c9;
-    color: #ffffff;
-    border: 2px solid white;
-}
-
-#btn-cetak:hover {
-    background-color: rgb(255, 255, 255);
-    color: #0a70b4;
-    border: 2px solid #4848fc;
-}
-
-
-/*------- Mengatur Tampilan Class Contact Berisi Informasi Kontak yang Dapat dihubungi -------*/
-
-.contact {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    font-family: Arial;
-}
-
-.ct-content {
-    height: 95px;
-    background-color: #f2bf63;
-    color: black;
-    font-weight: 800;
-    padding: 25px;
-}
-
-.ct-content img {
-    height: 15px;
-    width: 15px;
-}
-
-.ct-content h5 {
-    font-size: 16px;
-    padding-top: 5px;
-}
-
-
-/*------- Tampilan Copyright -------*/
-
-footer {
-    background-color: #353535;
-    color: #fff;
-    height: 20px;
-    width: auto;
-    padding: 35px;
-    font-family: Arial;
-    text-align: center;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*------- Header penampung logo-nama website -------*/
+    
+    .header {
+        height: 80px;
+        width: 100%;
+        background-color: #353535;
+        text-align: center;
+        position: fixed;
+        padding: 17px;
+        top: 0;
+    }
+    /*------- Tampilan tag img logo website-------*/
+    
+    img#logo-web {
+        height: 45px;
+        width: 45px;
+    }
+    /*------- Tampilan tag a nama website-------*/
+    
+    a#nama-web {
+        text-decoration: none;
+        color: white;
+        font-family: 'East Octopus';
+        font-size: 40px;
+        margin: 0;
+    }
+    /*------- Tampilan tag span nama website-------*/
+    
+    span#nama-web {
+        color: #f2bf63;
+        font-family: 'East Octopus';
+        margin-left: 7px;
+    }
+    /*------- Import font nama website -------*/
+    
+    @font-face {
+        font-family: 'East Octopus';
+        src: url(font/East-Octopus.otf);
+    }
+    /*------- Tampilan Navigation Bar -------*/
+    
+    .navbar {
+        background-color: #f2bf63;
+        height: 46px;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        font-family: Arial;
+        font-weight: 700;
+        color: #353535;
+    }
+    /*------- Mengatur posisi elemen navbar -------*/
+    
+    .navbar-left {
+        float: left;
+        padding-top: 16px;
+    }
+    
+    .navbar-right {
+        float: right;
+    }
+    /*------- Mengatur Tampilan Tulisan Menu -------*/
+    
+    .navbar-left a {
+        text-decoration: none;
+        padding-left: 14px;
+        color: #353535;
+    }
+    
+    .navbar-left a:hover {
+        padding: 14px 16px;
+        color: #fff;
+    }
+    /*------- Mengatur Tampilan Button Menu -------*/
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .navbar li {
+        float: left;
+    }
+    
+    .navbar li a {
+        display: block;
+        color: #353535;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .navbar li a:hover {
+        background-color: #353535;
+        color: white;
+    }
+    /*------- Mengatur Tampilan Konten Judul -------*/
+    
+    .bg-content {
+        height: 720px;
+        background: url(../img/bg-masakan.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .jd-content {
+        height: 720px;
+        margin-top: 126px;
+        padding-top: 123px;
+        color: white;
+        font-family: Arial;
+        text-align: center;
+    }
+    
+    .jd-content h1 {
+        font-size: 100px;
+        padding-top: 24px;
+    }
+    
+    #sub-jd {
+        font-size: 20px;
+    }
+    /*------- Mengatur Tampilan Button Pemesanan pada Konten Judul -------*/
+    
+    #btn-menu {
+        background-color: #f2bf63;
+        font-weight: 600;
+        height: 30px;
+        width: 175px;
+        border-radius: 50px;
+        line-height: 26px;
+        margin-top: 35px;
+        margin-left: 42%;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    #daftar-menu {
+        font-size: 15px;
+        color: #353535;
+        text-decoration: none;
+    }
+    
+    #btn-menu:hover,
+    #daftar-menu:hover {
+        cursor: pointer;
+        background-color: #353535;
+        color: #f2bf63;
+    }
+    /*------- Mengatur Tampilan Langkah-langkan Pemesanan -------*/
+    
+    .cr-content {
+        text-align: center;
+        font-family: 'Mont Light';
+    }
+    
+    .cr-content h1 {
+        font-family: 'Mont Heavy';
+        color: #232c2e;
+        margin: 35px;
+    }
+    
+    .cr-content h3 {
+        font-family: 'Mont Heavy';
+        color: #7e8276;
+        margin: 15px;
+    }
+    
+    .card-content {
+        display: grid;
+        grid-template-rows: repeat(1, auto);
+        padding-left: 520px;
+        padding-right: auto;
+        padding-bottom: 50px;
+    }
+    
+    .card-content .card {
+        margin-top: 20px;
+        padding-bottom: 50px;
+        padding: 45px;
+        border-color: #d0ccbf;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 40%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    
+    .card:hover {
+        background-color: beige;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+    
+    .box-numb {
+        background-color: rgb(212, 178, 85);
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+    }
+    
+    .box-numb p {
+        font-family: 'Mont Heavy';
+        font-size: 35px;
+        color: #7e8276;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+    }
+    
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    
+    .material-icons {
+        font-size: 70px;
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+    
+    .cd-container p {
+        font-size: 11.5px;
+        text-align: justify;
+    }
+    /*------- Mengatur Tampilan Jaminan Pelayanan-------*/
+    
+    .card-content2 {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+    }
+    
+    .card-content2 .card {
+        margin-left: 55px;
+        max-width: 85px;
+        width: 40%;
+        margin-top: 20px;
+        padding: 45px;
+    }
+    
+    .card-content2 h4 {
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    /*------- Import Font Langkah Pemesanan -------*/
+    
+    @font-face {
+        font-family: 'Mont Heavy';
+        src: url(font/Mont-HeavyDEMO.otf);
+    }
+    
+    @font-face {
+        font-family: 'Mont Light';
+        src: url(font/Mont-ExtraLightDEMO.otf);
+    }
+    /*------- Tampilan Background Menu + Curved Background-------*/
+    
+    svg {
+        display: block;
+    }
+    
+    .bg-curved2 {
+        background-color: #767a7d;
+    }
+    
+    .bg-daftarMenu {
+        background-color: #767a7d;
+        height: auto;
+        width: 100%;
+    }
+    /*------- Mengatur Tampilan Menu Pilih Makanan/Minuman-------*/
+    
+    .js-bg-transisi {
+        text-align: center;
+        font-family: 'Cream';
+        margin-top: 50px;
+    }
+    
+    .js-bg-transisi h1 {
+        font-size: 70px;
+    }
+    
+    .js-bg-transisi h4 {
+        font-size: 35px;
+    }
+    
+    .js-bg-transisi img {
+        height: 165px;
+        width: auto;
+        padding-bottom: 17px;
+    }
+    
+    .js-bg-transisi img:hover {
+        height: 175px;
+        width: auto;
+    }
+    
+    .pilih-menu {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    
+    .card-pmenu {
+        background-color: #fff;
+        border-radius: 3em;
+        box-shadow: 0 4px 8px 0 rgba(172, 165, 165, 0.938);
+        padding: 27px;
+        padding-bottom: 60px;
+        margin: 175px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .card-pmenu:hover {
+        background-color: #353535;
+        color: #fff;
+        border-radius: 3em;
+        box-shadow: 0 4px 8px 0 #f2bf63;
+        padding: 27px;
+        margin: 175px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    /*------- Import Font Untuk Menu -------*/
+    
+    @font-face {
+        font-family: 'Cream';
+        src: url(font/cream-DEMO.otf);
+    }
+    
+    @font-face {
+        font-family: 'Caviar Dreams Bold';
+        src: url(font/CaviarDreams_Bold.ttf);
+    }
+    
+    @font-face {
+        font-family: 'Caviar Dreams Light';
+        src: url(font/CaviarDreams.ttf);
+    }
+    /*------- Tampilan Daftar Menu Minuman + Makanan -------*/
+    
+    .daftar-minuman {
+        background-color: #767a7d;
+    }
+    /*------- Tampilan Daftar Menu Makanan -------*/
+    
+    .daftar-makanan {
+        background-color: #767a7d;
+    }
+    /*------- Mengatur Ukuran dan Tampilan Navbar Daftar Menu -------*/
+    
+    .nav-daftar {
+        height: 30px;
+        width: auto;
+        padding-top: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+        font-size: 15px;
+        color: #fff;
+    }
+    
+    .nav-daftar .material-icons {
+        font-size: 10px;
+        margin-right: 2px;
+    }
+    /*------- Mengatur Tata Letak Bagian Kanan - Kiri Navbar -------*/
+    
+    .nav-df-left {
+        float: left;
+    }
+    
+    .nav-df-right {
+        float: right;
+    }
+    /*------- Mengatur Tampilan Grid Daftar Menu Makanan + Minuman -------*/
+    
+    .content-daftar {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+    /*------- Mengatur Tampilan Card Daftar Menu Makanan -------*/
+    
+    .card-daftar {
+        background-color: #fff;
+        height: 188px;
+        width: 185px;
+        padding-top: 35px;
+        padding-bottom: 95px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin: 45px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        float: left;
+    }
+    /*------- Mengatur Tampilan Gambar -------*/
+    
+    #img-daftar {
+        height: 150px;
+        width: 150px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+        padding-bottom: 0px;
+    }
+    
+    #img-daftar:hover {
+        height: 153px;
+        width: 153px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+        padding-bottom: 0px;
+    }
+    /*Form*/
+    
+    @font-face {
+        font-family: "Beauty Sunflower";
+        src: url('Manta Style Script DEMO.ttf') format('truetype');
+    }
+    
+    #divform {
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+        display: none;
+    }
+    
+    .form {
+        margin-left: 480px;
+        margin-right: 480px;
+        margin-top: 175px;
+        margin-bottom: 65px;
+        font-family: 'Quicksand', sans-serif;
+        color: #fff;
+        background-color: #767a7d;
+        height: 295px;
+        width: auto;
+        box-shadow: 0 4px 10px 0 black;
+    }
+    
+    .sub-form {
+        padding-top: 18px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    
+    .input-group {
+        margin-top: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .input-group span {
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #sub-form1 input {
+        width: 450px;
+        height: 30px;
+        padding-left: 25px;
+    }
+    
+    #btn-cetak {
+        width: 170px;
+        margin-top: 20px;
+        margin-left: 12.5em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+        outline: none;
+        cursor: pointer;
+        background-color: #f2bf63;
+        color: #ffffff;
+        border: 2px solid white;
+        box-shadow: 0 4px 4px 0 rgb(99, 95, 95);
+    }
+    
+    #btn-cetak:hover {
+        background-color: rgb(255, 255, 255);
+        color: #f2bf63;
+        border: 2px solid #f2bf63;
+        box-shadow: 0 6px 8px 0 rgb(99, 95, 95);
+    }
+    /*------- Mengatur Tampilan Class Contact Berisi Informasi Kontak yang Dapat dihubungi -------*/
+    
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        font-family: Arial;
+    }
+    
+    .ct-content {
+        height: 95px;
+        background-color: #f2bf63;
+        color: black;
+        font-weight: 800;
+        padding: 25px;
+    }
+    
+    .ct-content img {
+        height: 15px;
+        width: 15px;
+    }
+    
+    .ct-content h5 {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+    /*------- Tampilan Copyright -------*/
+    
+    footer {
+        background-color: #353535;
+        color: #fff;
+        height: 20px;
+        width: auto;
+        padding: 35px;
+        font-family: Arial;
+        text-align: center;
+    }
